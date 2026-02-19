@@ -451,15 +451,19 @@ local function isKeyEmpire(url)
     if type(url) ~= "string" then
         return false
     end
-    local host = url:match("^%a+://([^/%?#]+)") or url:match("^([^/%?#]+)")
 
+    local host = url:match("^%a+://([^/%?#]+)") or url:match("^([^/%?#]+)")
     if not host then
         return false
     end
 
     host = host:lower()
 
-    return host == "key-empire.com" or host == "www.key-empire.com"
+    -- remove port if present (e.g., key-empire.com:8080)
+    host = host:match("^[^:]+") or host
+
+    return host == "key-empire.com" 
+        or host:sub(-#".key-empire.com") == ".key-empire.com"
 end
 
 local merged = {}
