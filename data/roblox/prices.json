@@ -152,25 +152,25 @@
 	},
 
 	"volt": {
-		"purchase_url": "https://www.key-empire.com/#volt",
+		"purchase_url": "https://beta.key-empire.com/product/volt",
 		"platforms": {
 			"windows": [
 				{
 					"id": "volt-7d",
 					"days": 7,
-					"price": 4.99,
+					"price": 5.99,
 					"currency": "USD"
 				},
 				{
 					"id": "volt-30d",
 					"days": 30,
-					"price": 16.99,
+					"price": 19.99,
 					"currency": "USD"
 				},
 				{
 					"id": "volt-90d",
 					"days": 90,
-					"price": 44.99,
+					"price": 49.99,
 					"currency": "USD"
 				}
 			]
