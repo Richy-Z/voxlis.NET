@@ -1,122 +1,122 @@
 <template id="exploit-card-template">
-    <div
-        class="relative bg-surface/40 border border-border/10 rounded-b-card rounded-t-none shadow-soft p-6 py-7 flex flex-col">
-        <!-- accent line -->
-        <div class="absolute top-0 left-0 right-0 h-[3px] bg-primary topbar-normal"></div>
+	<div
+		class="relative bg-surface/40 border border-border/10 rounded-b-card rounded-t-none shadow-soft p-6 py-7 flex flex-col">
+		<!-- accent line -->
+		<div class="absolute top-0 left-0 right-0 h-[3px] bg-primary topbar-normal"></div>
 
-        <!-- rainbow line, used for trending products -->
-        <div class="absolute top-0 left-0 right-0 h-[3px]
+		<!-- rainbow line, used for trending products -->
+		<div class="absolute top-0 left-0 right-0 h-[3px]
                     bg-gradient-to-r from-red-400 via-yellow-400 via-green-400 via-blue-400 to-purple-400
                     topbar-trending hidden">
-        </div>
+		</div>
 
-        <div class="flex flex-col gap-4">
-            <!-- header -->
-            <div class="flex items-start justify-between gap-4">
+		<div class="flex flex-col gap-4">
+			<!-- header -->
+			<div class="flex items-start justify-between gap-4">
 
-                <div class="min-w-0">
-                    <div class="flex items-center gap-2">
+				<div class="min-w-0">
+					<div class="flex items-center gap-2">
 
-                        <h3 class="text-lg font-semibold text-white truncate exploit-name">
-                            Name
-                        </h3>
+						<h3 class="text-lg font-semibold text-white truncate exploit-name">
+							Name
+						</h3>
 
-                        <!-- TODO: add like backgrounds to the badges and add tolltip or something -->
-                        <i class="fa-solid fa-circle-check text-blue-400" title="Verified" data-badge="verified"></i>
+						<!-- TODO: add like backgrounds to the badges and add tolltip or something -->
+						<i class="fa-solid fa-circle-check text-blue-400" title="Verified" data-badge="verified"></i>
 
-                        <i class="fa-solid fa-arrow-trend-up text-pink-400" title="Trending" data-badge="trending"></i>
+						<i class="fa-solid fa-arrow-trend-up text-pink-400" title="Trending" data-badge="trending"></i>
 
-                        <i class="fa-solid fa-triangle-exclamation text-red-400" title="Warning"
-                            data-badge="warning"></i>
-                    </div>
+						<i class="fa-solid fa-triangle-exclamation text-red-400" title="Warning"
+							data-badge="warning"></i>
+					</div>
 
-                    <!-- platform -->
-                    <div class="flex items-center gap-2 mt-1">
-                        <div class="h-6 w-6 rounded-md bg-blue-400/15 flex items-center justify-center" title="Windows"
-                            data-platform="windows">
-                            <i class="fa-brands fa-microsoft text-blue-400 text-sm"></i>
-                        </div>
-                        <div class="h-6 w-6 rounded-md bg-green-400/15 flex items-center justify-center" title="Android"
-                            data-platform="android">
-                            <i class="fa-brands fa-android text-green-400 text-sm"></i>
-                        </div>
-                        <div class="h-6 w-6 rounded-md bg-slate-300/15 flex items-center justify-center" title="macOS"
-                            data-platform="macos">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                class="h-3.5 w-3.5 opacity-80 text-white">
-                                <path fill="currentColor" fill-rule="evenodd"
-                                    d="M11.995 1H5a4 4 0 0 0-4 4v14a4 4 0 0 0 4 4h8.566c-.292-1.067-.559-2.412-.773-3.78q-.384.03-.793.03c-3.882 0-6.337-2.153-7.124-3.334a.75.75 0 0 1 1.248-.832c.546.82 2.558 2.666 5.876 2.666q.298 0 .58-.02a42 42 0 0 1-.314-3.48H10a.75.75 0 0 1-.75-.75c0-4.425 1.767-9.934 2.745-12.5m3.133 22c-.312-1.022-.613-2.478-.854-4.015c2.538-.614 4.089-2.149 4.802-3.005a.75.75 0 1 0-1.152-.96a7.52 7.52 0 0 1-3.862 2.471c-.195-1.53-.312-2.982-.312-3.991a.75.75 0 0 0-.75-.75h-2.233c.197-4.37 2.01-9.696 2.839-11.75H19a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4zM6.5 6.75a.75.75 0 0 1 .75.75v2a.75.75 0 0 1-1.5 0v-2a.75.75 0 0 1 .75-.75m10.75.75a.75.75 0 0 0-1.5 0v2a.75.75 0 0 0 1.5 0z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </div>
-                        <div class="h-6 w-6 rounded-md bg-slate-300/15 flex items-center justify-center" title="iOS"
-                            data-platform="ios">
-                            <i class="fa-brands fa-apple text-slate-300 text-sm"></i>
-                        </div>
+					<!-- platform -->
+					<div class="flex items-center gap-2 mt-1">
+						<div class="h-6 w-6 rounded-md bg-blue-400/15 flex items-center justify-center" title="Windows"
+							data-platform="windows">
+							<i class="fa-brands fa-microsoft text-blue-400 text-sm"></i>
+						</div>
+						<div class="h-6 w-6 rounded-md bg-green-400/15 flex items-center justify-center" title="Android"
+							data-platform="android">
+							<i class="fa-brands fa-android text-green-400 text-sm"></i>
+						</div>
+						<div class="h-6 w-6 rounded-md bg-slate-300/15 flex items-center justify-center" title="macOS"
+							data-platform="macos">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+								class="h-3.5 w-3.5 opacity-80 text-white">
+								<path fill="currentColor" fill-rule="evenodd"
+									d="M11.995 1H5a4 4 0 0 0-4 4v14a4 4 0 0 0 4 4h8.566c-.292-1.067-.559-2.412-.773-3.78q-.384.03-.793.03c-3.882 0-6.337-2.153-7.124-3.334a.75.75 0 0 1 1.248-.832c.546.82 2.558 2.666 5.876 2.666q.298 0 .58-.02a42 42 0 0 1-.314-3.48H10a.75.75 0 0 1-.75-.75c0-4.425 1.767-9.934 2.745-12.5m3.133 22c-.312-1.022-.613-2.478-.854-4.015c2.538-.614 4.089-2.149 4.802-3.005a.75.75 0 1 0-1.152-.96a7.52 7.52 0 0 1-3.862 2.471c-.195-1.53-.312-2.982-.312-3.991a.75.75 0 0 0-.75-.75h-2.233c.197-4.37 2.01-9.696 2.839-11.75H19a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4zM6.5 6.75a.75.75 0 0 1 .75.75v2a.75.75 0 0 1-1.5 0v-2a.75.75 0 0 1 .75-.75m10.75.75a.75.75 0 0 0-1.5 0v2a.75.75 0 0 0 1.5 0z"
+									clip-rule="evenodd" />
+							</svg>
+						</div>
+						<div class="h-6 w-6 rounded-md bg-slate-300/15 flex items-center justify-center" title="iOS"
+							data-platform="ios">
+							<i class="fa-brands fa-apple text-slate-300 text-sm"></i>
+						</div>
 
-                        <div class="h-6 w-6 rounded-md flex items-center justify-center bg-orange-400/15 keyed"
-                            title="Has a key system">
-                            <i class="fa-solid fa-key text-orange-300/75 text-sm"></i>
-                        </div>
+						<div class="h-6 w-6 rounded-md flex items-center justify-center bg-orange-400/15 keyed"
+							title="Has a key system">
+							<i class="fa-solid fa-key text-orange-300/75 text-sm"></i>
+						</div>
 
-                        <div class="h-6 px-2.5 rounded-md 
+						<div class="h-6 px-2.5 rounded-md 
                                             bg-primary/10 border border-primary/20 
                                             flex items-center justify-center" title="Executor type">
-                            <span class="text-[10px] font-semibold tracking-wide uppercase text-primary executor-type">
-                                Internal
-                            </span>
-                        </div>
-                    </div>
-                </div>
+							<span class="text-[10px] font-semibold tracking-wide uppercase text-primary executor-type">
+								Internal
+							</span>
+						</div>
+					</div>
+				</div>
 
-                <!-- sUNC result -->
-                <div class="flex flex-col items-end gap-1 sunc-result">
-                    <img src="https://sunc.su/sunc-full.png" class="h-4 select-none" alt="sUNC">
-                    <div class="text-s font-semibold text-purple-400"><span class="sunc-percentage">__</span>%</div>
-                </div>
+				<!-- sUNC result -->
+				<div class="flex flex-col items-end gap-1 sunc-result">
+					<img src="https://sunc.su/sunc-full.png" class="h-4 select-none" alt="sUNC">
+					<div class="text-s font-semibold text-purple-400"><span class="sunc-percentage">__</span>%</div>
+				</div>
 
-                <!-- no sUNC result -->
-                <div class="flex flex-col items-end gap-1 opacity-40 hidden sunc-none">
-                    <img src="https://sunc.su/sunc-full.png" class="h-4 select-none grayscale" alt="sUNC">
-                    <div class="text-s font-semibold text-muted">None</div>
-                </div>
-            </div>
+				<!-- no sUNC result -->
+				<div class="flex flex-col items-end gap-1 opacity-40 hidden sunc-none">
+					<img src="https://sunc.su/sunc-full.png" class="h-4 select-none grayscale" alt="sUNC">
+					<div class="text-s font-semibold text-muted">None</div>
+				</div>
+			</div>
 
-            <div class="space-y-2 text-sm text-white/80">
-                <div class="flex items-start gap-2 text-sm leading-snug border-l-2 border-emerald-500/50 pl-3">
-                    <span class="pro-summary">
-                        Pro summary
-                    </span>
-                </div>
+			<div class="space-y-2 text-sm text-white/80">
+				<div class="flex items-start gap-2 text-sm leading-snug border-l-2 border-emerald-500/50 pl-3">
+					<span class="pro-summary">
+						Pro summary
+					</span>
+				</div>
 
 
-                <div class="flex items-start gap-2 text-sm leading-snug border-l-2 border-yellow-500/50 pl-3">
-                    <span class="neutral-summary">Neutral summary</span>
-                </div>
+				<div class="flex items-start gap-2 text-sm leading-snug border-l-2 border-yellow-500/50 pl-3">
+					<span class="neutral-summary">Neutral summary</span>
+				</div>
 
-                <div class="flex items-start gap-2 text-sm leading-snug border-l-2 border-red-500/50 pl-3">
-                    <span class="con-summary">Con summary</span>
-                </div>
-            </div>
-        </div>
+				<div class="flex items-start gap-2 text-sm leading-snug border-l-2 border-red-500/50 pl-3">
+					<span class="con-summary">Con summary</span>
+				</div>
+			</div>
+		</div>
 
-        <div class="flex-1"></div>
+		<div class="flex-1"></div>
 
-        <div class="flex flex-col gap-2 pt-5">
-            <!-- tags -->
-            <div class="flex flex-wrap gap-2">
-                <span class="
+		<div class="flex flex-col gap-2 pt-5">
+			<!-- tags -->
+			<div class="flex flex-wrap gap-2">
+				<span class="
                         relative group
                         px-3 py-1 text-sm rounded-full
                         bg-surface/40 border border-border/10
                         text-muted
                         flex items-center gap-1
                     ">
-                    <i class="text-muted feature-tag-icon"></i>
-                    <span class="feature-tag"></span>
+					<i class="text-muted feature-tag-icon"></i>
+					<span class="feature-tag"></span>
 
-                    <!-- tooltip -->
-                    <span class="
+					<!-- tooltip -->
+					<span class="
                         pointer-events-none
                         absolute bottom-full left-1/2 -translate-x-1/2 mb-2
                         max-w-[220px] w-max
@@ -134,27 +134,27 @@
                         group-hover:scale-100
                         feature-tag-tooltip
                     "></span>
-                </span>
-            </div>
+				</span>
+			</div>
 
-            <!-- price -->
-            <div class="text-sm text-white pt-2">
-                <span class="price-paid-multiple">From </span><span class="font-semibold price-value">(SYMBOL)(PRICE)
-                    (ISO)</span><span class="key-separator"> • <span class="key-length">X days</span></span>
-                <span class="text-muted ml-1 price-additional">+ y more price(s)</span>
-            </div>
+			<!-- price -->
+			<div class="text-sm text-white pt-2">
+				<span class="price-paid-multiple">From </span><span class="font-semibold price-value">(SYMBOL)(PRICE)
+					(ISO)</span><span class="key-separator"> • <span class="key-length">X days</span></span>
+				<span class="text-muted ml-1 price-additional">+ y more price(s)</span>
+			</div>
 
-            <!-- bottom buttons -->
-            <div class="flex flex-col gap-2 pt-2">
-                <!-- info modal toggle -->
-                <button
-                    class="flex flex-1 justify-center items-center gap-2 px-3 py-2 rounded-lg
+			<!-- bottom buttons -->
+			<div class="flex flex-col gap-2 pt-2">
+				<!-- info modal toggle -->
+				<button
+					class="flex flex-1 justify-center items-center gap-2 px-3 py-2 rounded-lg
                                                                       border border-blue-500/40 text-blue-400 text-sm
                                                                       hover:bg-blue-500/10 transition-all duration-500 info-button">
-                    <i class="fa-solid fa-circle-info"></i>
-                    <span>Info</span>
-                </button>
-            </div>
-        </div>
-    </div>
+					<i class="fa-solid fa-circle-info"></i>
+					<span>Info</span>
+				</button>
+			</div>
+		</div>
+	</div>
 </template>
