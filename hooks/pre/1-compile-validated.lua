@@ -448,20 +448,20 @@ local function skuInfo(pricing)
 end
 
 local function isKeyEmpire(url)
-    if type(url) ~= "string" then
-        return false
-    end
+	if type(url) ~= "string" then
+		return false
+	end
 
-    local host = url:match("^%a+://([^/%?#]+)") or url:match("^([^/%?#]+)")
-    if not host then
-        return false
-    end
+	local host = url:match("^%a+://([^/%?#]+)") or url:match("^([^/%?#]+)")
+	if not host then
+		return false
+	end
 
-	  host = host:lower()
-    host = host:match("^[^:]+") or host -- strip port number
-  
-    return host == "key-empire.com" 
-        or host:sub(-(#".key-empire.com")) == ".key-empire.com"
+	host = host:lower()
+	host = host:match("^[^:]+") or host -- strip port number
+
+	return host == "key-empire.com"
+		or host:sub(-(#".key-empire.com")) == ".key-empire.com"
 end
 
 local merged = {}
